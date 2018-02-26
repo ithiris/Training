@@ -1,17 +1,24 @@
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
 import { $ } from './utilities/domManipulation';
+import DropDownState from './components/dropdown/state/statedropdown'
+import DropDownCity from './components/dropdown/city/citydropdown'
+import  DropDownCountry from './components/dropdown/country/countrydropdown'
+
+
 export default class App {
     public name = 'Rem';
     public index: number = 1;
     private component: Element;
-    private header: Header;
-    private footer: Footer;
+    private dropdowncountry:DropDownCountry;
+    private dropdownstate:DropDownState;
+    private dropdowncity:DropDownCity;
+
 
     constructor() {
         $("#" + (<any>this).constructor.name.toLowerCase()).innerHTML = require("./app.html");
-        this.header = new Header();
-        this.footer = new Footer();
+        this.dropdowncountry =new DropDownCountry ();
+        this.dropdownstate =new DropDownState ();
+        this.dropdowncity =new DropDownCity ();
+
         $("#add").addEventListener('click', () => {
             this.add();
         });

@@ -1,0 +1,48 @@
+
+.state-btn{
+    color:green;
+}
+.city-btn {
+    color:green;
+}
+.country-btn{
+    color:green;
+}
+.dropdown {
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.statedropdown-content{
+
+    display: none;
+    position: absolute;
+
+}
+
+.citydropdown-content{
+
+    display: none;
+    position: absolute;
+}
+
+.countrydropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .statedropdown-content {
+    display: block;
+
+
+}
+
+.dropdown:hover .citydropdown-content{
+    display: block;
+}
+
+.dropdown:hover .countrydropdown-content{
+
+    display: block;
+}
