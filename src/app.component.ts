@@ -4,6 +4,7 @@ import DropDownCity from './components/dropdown/city/citydropdown'
 import  DropDownCountry from './components/dropdown/country/countrydropdown'
 
 
+
 export default class App {
     public name = 'Rem';
     public index: number = 1;
@@ -13,11 +14,13 @@ export default class App {
     private dropdowncity:DropDownCity;
 
 
+
     constructor() {
         $("#" + (<any>this).constructor.name.toLowerCase()).innerHTML = require("./app.html");
-        this.dropdowncountry =new DropDownCountry ();
+       this.dropdowncountry =new DropDownCountry ();
         this.dropdownstate =new DropDownState ();
         this.dropdowncity =new DropDownCity ();
+
 
         $("#add").addEventListener('click', () => {
             this.add();
