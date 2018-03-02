@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>General  info</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<script>
+    function validationFunction() {
+        var x = document.getElementById("name").value;
+        document.getElementById("namefield").innerHTML = x;
+        var y =document.getElementById("email").value;
+        document.getElementById("change").innerHTML = y;
+        var z = document.getElementById("mobile").value;
+        document.getElementById("digit").innerHTML = z;
+        var a=document.getElementById("radio1");
+
+
+        var b=document.getElementById("radio2");
+
+
+        if(a.checked==false && b.checked==false){
+            console.log("select gender");
+            return false;
+        }
+        if(a.checked==true){
+            document.getElementById("radios").innerHTML = a.value;
+            console.log("you are a male");
+        }
+        else{
+            console.log("you are a female");
+            document.getElementById("radios1").innerHTML = b.value;
+        }
+        var e = document.getElementById("dataview");
+        var strUser = e.options[e.selectedIndex].value;
+        document.getElementById("selecteditem").innerHTML = e.value;
+
+        console.log(strUser)
+
+
+    }
+</script>
+
+<div class="container">
+
+
+
+        <form>
+
+            <label>Name: </label> <input type="text"  placeholder="name" id="name"  required>
+
+            <br><br>
+            <label>Email:</label> <input type="email"  placeholder="email" id="email" required>
+                <br><br>
+
+            <label>MobileNo:</label> <input type=number  placeholder="mobileno" id="mobile" >
+                <br><br>
+
+            <label>Gender:</label><input type="radio" id="radio1" name="gender" value="male" > Male
+            <input type="radio" id="radio2" name="gender"  value="female" > Female
+
+            <br><br>
+           <label> Alias:</label> <select id="dataview">
+                <option value="Doctor" selected="selected">Doctor</option>
+                <option value="Phd" selected="selected">Phd</option>
+                <option value="Mphl" selected="selected">Mphl</option>
+                <option value="BE" selected="selected">BE</option>
+            </select>
+                <br><br>
+            <button onclick="ClearFunction()">Clear</button>  <button type="button" onclick="validationFunction()">Save</button>
+
+
+
+
+        </form>
+
+
+<p id="namefield"></p>
+
+    <p id="change"></p>
+
+    <p id="digit"></p>
+    <p id="radios"></p>
+    <p id="radios1"></p>
+    <p id="selecteditem"></p>
+
+
+
+</div>
+
+
+</body>
+</html>
