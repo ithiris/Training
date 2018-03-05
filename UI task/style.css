@@ -1,1 +1,43 @@
 
+.container{
+
+    border: 2px solid;
+    width:25%;
+    padding: 25px;
+    display: block;
+
+}
+
+
+.form-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1rem 0;
+}
+
+
+label {
+    text-align: right;
+    width: 25%;
+}
+
+input {
+    border: 2px solid #aaa;
+    border-radius: 2px;
+}
+.savebutton{
+
+    margin-left: 75%;
+
+}
+.clearbutton{
+    margin-top: -20px;
+    margin-left: 25%;
+
+}
+
+#dataview{
+
+    height: 25px;
+    width: 60%;
+}

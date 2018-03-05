@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>General  info</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="generalinfo.js"></script>
+<body>
+
+
+<div class="container">
+
+    <form name="frm">
+
+        <div class="form-field">
+            <label>Name: </label> <input type="text"   id="name"  required>
+            <label></label>
+            <p id="namefield"></p>
+        </div>
+
+        <div class="form-field">
+
+            <label>Email:</label> <input type="text" id="Email" required>
+            <label></label>
+            <p id="Error"></p>
+            </div>
+
+        <div class="form-field">
+            <label>MobileNo:</label> <input type=number  name="phone" id="mobile" >
+            <label></label>
+            <p id="digit"></p>
+        </div>
+
+
+        <div class="form-field">
+            <label>Gender:</label><input type="radio" id="radio1" name="gender" value="male" > Male
+
+
+            <input type="radio" id="radio2" name="gender"  value="female" > Female
+            </div>
+        <div class="form-field">
+           <label> Alias:</label>
+            <select id="dataview" required>
+            <option value="">None</option>
+                <option value="Doctor" selected="selected">Doctor</option>
+                <option value="Phd" selected="selected">Phd</option>
+                <option value="Mphl" selected="selected">Mphl</option>
+                <option value="BE" selected="selected">BE</option>
+
+            </select>
+            <label></label>
+            <p id="selecteditem"></p>
+                </div>
+
+
+
+        <div class="savebutton">
+            <button type="button" onclick="validationFunction()">Save</button>
+            </div>
+        <div class="clearbutton">
+            <button type="button" onclick="ClearFunction()">Clear</button>
+        </div>
+
+
+
+
+
+
+
+</form>
+
+    </div>
+
+
+    <p id="radios"></p>
+    <p id="radios1"></p>
+
+
+
+
+
+
+
+</body>
+</html>
